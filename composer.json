@@ -1,0 +1,25 @@
+{
+  "name": "brayan/micro-framework",
+  "description": "Micro-Framework Example",
+  "minimum-stability": "beta",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Brayan Montealegre",
+      "email": "brayanmontealegre36@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1" ,
+    "ext-json": "*",
+    "phpmailer/phpmailer": "^6.6"
+  } ,
+  "autoload": {
+    "psr-4": {
+      "Core\\": "core/",
+      "App\\Model\\": "app/model/",
+      "App\\Controller\\": "app/controller/",
+      "App\\Middleware\\": "app/middleware/"
+    }
+  }
+}
